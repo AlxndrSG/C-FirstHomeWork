@@ -4,11 +4,14 @@ Console.Write("Введите первое число: ");
 string userInput1 = Console.ReadLine() ?? "";
 Console.Write("Введите второе число: ");
 string userInput2 = Console.ReadLine() ?? "";
-int userNumderA = int.Parse (userInput1);
-int userNumderB = int.Parse (userInput2);
+int userNumberA = int.Parse(userInput1);
+int userNumberB = int.Parse(userInput2);
 
-int max = userNumderA;
+int max = userNumberA;
 
-if (userNumderB > max) max = userNumderB;
+if (userNumberB > max)
+{
+    max = userNumberB;
+}
 
 Console.WriteLine($"max = {max}");
