@@ -12,8 +12,14 @@ int userNumberС = int.Parse(userInput3);
 
 int max = userNumberA;
 
-if (userNumberB > max) max = userNumberB;
+if (userNumberB > max)
+{
+    max = userNumberB;
+}
 
-if (userNumberС > max) max = userNumberС;
+if (userNumberС > max)
+{
+    max = userNumberС;
+}
 
 Console.WriteLine($"Максимальное число -> {max}");
